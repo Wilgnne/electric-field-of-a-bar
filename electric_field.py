@@ -36,12 +36,12 @@ def sub_parts(init, end, subpartitions):
   return parts
 
 def electric_field(q, d):
-  k = 8.99 * 10e9
+  k = 8.99e9
   E = (k * abs(q)) / float(d**2)
   return E
 
 
-def campo_eletrico_barra(init, end, subpartitions, q, origin):
+def electric_field_bar(init, end, subpartitions, q, origin):
   sub_q = q / float(subpartitions)
 
   particles = sub_parts(init, end, subpartitions)
