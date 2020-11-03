@@ -46,7 +46,7 @@ def electric_field_bar(init, end, subpartitions, q, origin):
 
   particles = sub_parts(init, end, subpartitions)
 
-  electric_fields = map(lambda particle: electric_field(sub_q, distance(0, particle)), particles)
+  electric_fields = map(lambda particle: electric_field(sub_q, distance(origin, particle)), particles)
 
   return sum(electric_fields)
 
