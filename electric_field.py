@@ -22,13 +22,13 @@ def sub_parts(init, end, subpartitions):
 
   #Left
   current_point = middle - initial_step
-  for i in range(half_subpartitions):
+  for _ in range(half_subpartitions):
     parts.append(current_point)
     current_point -= distance_between_particles
 
   #Right
   current_point = middle + initial_step
-  for i in range(half_subpartitions):
+  for _ in range(half_subpartitions):
     parts.append(current_point)
     current_point += distance_between_particles
 
