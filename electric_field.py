@@ -49,3 +49,8 @@ def electric_field_bar(init, end, subpartitions, q, origin):
   electric_fields = map(lambda particle: electric_field(sub_q, distance(0, particle)), particles)
 
   return sum(electric_fields)
+
+def coulomb_law_bar(q, a, L):
+  k = 8.99e9
+  E = (k * abs(q)) / float(a*(L + a))
+  return E
